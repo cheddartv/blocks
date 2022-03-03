@@ -1,0 +1,116 @@
+{
+    "node": {
+      "__typename": "Collection",
+      "id": "Q29sbGVjdGlvbi0xMzU=",
+      "collectables": {
+        "edges": [
+          {
+            "node": {
+              "__typename": "Article",
+              "id": "QXJ0aWNsZS0yNzQwOTA=",
+              "slug": "mother-says-rat-infestation-at-hunts-point-family-shelter-has-gotten-worse",
+              "title": "Mother says rat infestation at Hunts Point family shelter has gotten worse",
+              "public_at": "2021-10-05T22:50:13-04:00",
+              "thumbnails": {
+                "medium": "https://img.chdrstatic.com/media/b2d9b07c-15b6-4dc7-bcdc-0c9da21ce60c.jpg?crop=800:450,smart&width=800&height=450&auto=webp"
+              },
+              "squareThumbnails": {
+                "small": "https://img.chdrstatic.com/media/dd4c94a0-0dfd-4fa2-927f-c5f397525027.jpg?source=backend&crop=600:600,smart&width=600&height=600&auto=webp"
+              },
+              "html": "<div class=\"block\">A mother says an ongoing rat problem at Hunts Point shelter has gotten so bad, rats are running over her kids' toys and beds.</div><div class=\"block\">Sugeiry Terrero says she is fed up with the living conditions inside the family shelter.</div><div class=\"block\">\"I hear rats inside my tub,\" Terrero says.</div><div class=\"block\">She took a cellphone Monday night inside her first-floor apartment at 1215 Seneca Ave. in Hunts Point that shows the problem she and her kids are experiencing.</div><div class=\"block\">\"It walked around the whole apartment like it pays rent here and then goes back into the vent,\" Terrero says.</div><div class=\"block\">The rat problem is more than just a house nuisance as it has become a safety and health issue for the mother of two. She says last month she saw a rat in her son's crib.</div><div class=\"block\">\"I saw the rat run off of my son onto the floor to go where it came from. That's outrageous!\" Terrero recalls.</div><div class=\"block\">The 26-year-old ended up taking her 1-year-old to the hospital and is now waiting for results from her doctor.</div><div class=\"block\">Terrero says rodents have left droppings on her sheets and have eaten through her groceries.</div><div class=\"block\">The shelter has 26 complaints on file according to the Department of Building's website, but none for rodent issues.</div><div class=\"block\">According to the Health Department's rat portal, rodent activity at the property goes back to 2010.</div><div class=\"block\">The latest report shows the building passing in August of this year, which is a shock to other tenants at the shelter who say they often hear rats in their walls and vents.</div><div class=\"block\">As for Terrero, she says she is speaking out because nothing has been done to improve the living conditions for families here.</div><div class=\"block\">\"We live in a shelter, but we should not live in deplorable conditions. At the end of the day, we are humans,\" Terrero says.</div><div class=\"block\">Terrero tells News 12 after the airing of this story, she was transferred to another shelter.</div><div class=\"block\">News 12 reached out to Department of Homeless Services, and they said in a statement in part, \"Protecting the health and safety of staff and clients is our top priority... we continue to work closely with clients to ensure their concerns are addressed as we continue to take the necessary steps to assess and prevent the recurrence of any pest control issues.\"</div>",
+              "authors": [
+                {
+                  "byline": "News 12 Staff"
+                }
+              ],
+              "videoFile": {
+                "isLive": false,
+                "videoUrls": [
+                  {
+                    "url": "https://vod.chdrstatic.com/source%3Dbackend%2Cexpire%3D1633511380%2Cpath%3D%2Ftranscode%2FRTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37%2Ctoken%3D986411358ea367bff68e26b2f9f1686d59533812c719de76e5be64c748ac3e9a/transcode/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37.mp4",
+                    "mime": "video/mp4"
+                  },
+                  {
+                    "url": "https://vod.chdrstatic.com/source%3Dbackend%2Cexpire%3D1633511380%2Cpath%3D%2Ftranscode%2FRTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37%2Ctoken%3D986411358ea367bff68e26b2f9f1686d59533812c719de76e5be64c748ac3e9a/transcode/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37.mp3",
+                    "mime": "audio/mpeg"
+                  },
+                  {
+                    "url": "https://vod.chdrstatic.com/source%3Dbackend%2Cexpire%3D1633511380%2Cpath%3D%2Ftranscode%2FRTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37%2Ctoken%3D986411358ea367bff68e26b2f9f1686d59533812c719de76e5be64c748ac3e9a/transcode/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37.0000000.jpg",
+                    "mime": "image/jpeg"
+                  },
+                  {
+                    "url": "https://vod.chdrstatic.com/source%3Dbackend%2Cexpire%3D1633511380%2Cpath%3D%2Ftranscode%2FRTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37%2Ctoken%3D986411358ea367bff68e26b2f9f1686d59533812c719de76e5be64c748ac3e9a/transcode/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37.m3u8",
+                    "mime": "application/x-mpegURL"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "__typename": "Article",
+              "id": "QXJ0aWNsZS0yNzQwOTA=",
+              "slug": "gov-hochul-unveils-new-plan-to-stop-rise-of-hate-crime",
+              "title": "Mother says rat infestation at Hunts Point family shelter has gotten worse",
+              "public_at": "2021-10-05T22:50:13-04:00",
+              "thumbnails": {
+                "medium": "https://img.chdrstatic.com/media/b2d9b07c-15b6-4dc7-bcdc-0c9da21ce60c.jpg?crop=800:450,smart&width=800&height=450&auto=webp"
+              },
+              "squareThumbnails": {
+                "small": "https://img.chdrstatic.com/media/dd4c94a0-0dfd-4fa2-927f-c5f397525027.jpg?source=backend&crop=600:600,smart&width=600&height=600&auto=webp"
+              },
+              "html": "<div class=\"block\">A mother says an ongoing rat problem at Hunts Point shelter has gotten so bad, rats are running over her kids' toys and beds.</div><div class=\"block\">Sugeiry Terrero says she is fed up with the living conditions inside the family shelter.</div><div class=\"block\">\"I hear rats inside my tub,\" Terrero says.</div><div class=\"block\">She took a cellphone Monday night inside her first-floor apartment at 1215 Seneca Ave. in Hunts Point that shows the problem she and her kids are experiencing.</div><div class=\"block\">\"It walked around the whole apartment like it pays rent here and then goes back into the vent,\" Terrero says.</div><div class=\"block\">The rat problem is more than just a house nuisance as it has become a safety and health issue for the mother of two. She says last month she saw a rat in her son's crib.</div><div class=\"block\">\"I saw the rat run off of my son onto the floor to go where it came from. That's outrageous!\" Terrero recalls.</div><div class=\"block\">The 26-year-old ended up taking her 1-year-old to the hospital and is now waiting for results from her doctor.</div><div class=\"block\">Terrero says rodents have left droppings on her sheets and have eaten through her groceries.</div><div class=\"block\">The shelter has 26 complaints on file according to the Department of Building's website, but none for rodent issues.</div><div class=\"block\">According to the Health Department's rat portal, rodent activity at the property goes back to 2010.</div><div class=\"block\">The latest report shows the building passing in August of this year, which is a shock to other tenants at the shelter who say they often hear rats in their walls and vents.</div><div class=\"block\">As for Terrero, she says she is speaking out because nothing has been done to improve the living conditions for families here.</div><div class=\"block\">\"We live in a shelter, but we should not live in deplorable conditions. At the end of the day, we are humans,\" Terrero says.</div><div class=\"block\">Terrero tells News 12 after the airing of this story, she was transferred to another shelter.</div><div class=\"block\">News 12 reached out to Department of Homeless Services, and they said in a statement in part, \"Protecting the health and safety of staff and clients is our top priority... we continue to work closely with clients to ensure their concerns are addressed as we continue to take the necessary steps to assess and prevent the recurrence of any pest control issues.\"</div>",
+              "authors": [
+                {
+                  "byline": "News 12 Staff"
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "__typename": "Article",
+              "id": "QXJ0aWNsZS0yNzQwOTA=",
+              "slug": "gov-hochul-unveils-new-plan-to-stop-rise-of-hate-2",
+              "title": "Mother says rat infestation at Hunts Point family shelter has gotten worse",
+              "public_at": "2021-10-05T22:50:13-04:00",
+              "thumbnails": {
+                "medium": "https://img.chdrstatic.com/media/b2d9b07c-15b6-4dc7-bcdc-0c9da21ce60c.jpg?crop=800:450,smart&width=800&height=450&auto=webp"
+              },
+              "squareThumbnails": {
+                "small": "https://img.chdrstatic.com/media/dd4c94a0-0dfd-4fa2-927f-c5f397525027.jpg?source=backend&crop=600:600,smart&width=600&height=600&auto=webp"
+              },
+              "html": "<div class=\"block\">A mother says an ongoing rat problem at Hunts Point shelter has gotten so bad, rats are running over her kids' toys and beds.</div><div class=\"block\">Sugeiry Terrero says she is fed up with the living conditions inside the family shelter.</div><div class=\"block\">\"I hear rats inside my tub,\" Terrero says.</div><div class=\"block\">She took a cellphone Monday night inside her first-floor apartment at 1215 Seneca Ave. in Hunts Point that shows the problem she and her kids are experiencing.</div><div class=\"block\">\"It walked around the whole apartment like it pays rent here and then goes back into the vent,\" Terrero says.</div><div class=\"block\">The rat problem is more than just a house nuisance as it has become a safety and health issue for the mother of two. She says last month she saw a rat in her son's crib.</div><div class=\"block\">\"I saw the rat run off of my son onto the floor to go where it came from. That's outrageous!\" Terrero recalls.</div><div class=\"block\">The 26-year-old ended up taking her 1-year-old to the hospital and is now waiting for results from her doctor.</div><div class=\"block\">Terrero says rodents have left droppings on her sheets and have eaten through her groceries.</div><div class=\"block\">The shelter has 26 complaints on file according to the Department of Building's website, but none for rodent issues.</div><div class=\"block\">According to the Health Department's rat portal, rodent activity at the property goes back to 2010.</div><div class=\"block\">The latest report shows the building passing in August of this year, which is a shock to other tenants at the shelter who say they often hear rats in their walls and vents.</div><div class=\"block\">As for Terrero, she says she is speaking out because nothing has been done to improve the living conditions for families here.</div><div class=\"block\">\"We live in a shelter, but we should not live in deplorable conditions. At the end of the day, we are humans,\" Terrero says.</div><div class=\"block\">Terrero tells News 12 after the airing of this story, she was transferred to another shelter.</div><div class=\"block\">News 12 reached out to Department of Homeless Services, and they said in a statement in part, \"Protecting the health and safety of staff and clients is our top priority... we continue to work closely with clients to ensure their concerns are addressed as we continue to take the necessary steps to assess and prevent the recurrence of any pest control issues.\"</div>",
+              "authors": [
+                {
+                  "byline": "News 12 Staff"
+                }
+              ],
+              "videoFile": {
+                "isLive": false,
+                "videoUrls": [
+                  {
+                    "url": "https://vod.chdrstatic.com/source%3Dbackend%2Cexpire%3D1633511380%2Cpath%3D%2Ftranscode%2FRTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37%2Ctoken%3D986411358ea367bff68e26b2f9f1686d59533812c719de76e5be64c748ac3e9a/transcode/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37.mp4",
+                    "mime": "video/mp4"
+                  },
+                  {
+                    "url": "https://vod.chdrstatic.com/source%3Dbackend%2Cexpire%3D1633511380%2Cpath%3D%2Ftranscode%2FRTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37%2Ctoken%3D986411358ea367bff68e26b2f9f1686d59533812c719de76e5be64c748ac3e9a/transcode/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37.mp3",
+                    "mime": "audio/mpeg"
+                  },
+                  {
+                    "url": "https://vod.chdrstatic.com/source%3Dbackend%2Cexpire%3D1633511380%2Cpath%3D%2Ftranscode%2FRTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37%2Ctoken%3D986411358ea367bff68e26b2f9f1686d59533812c719de76e5be64c748ac3e9a/transcode/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37/RTBXBKRatsAtShelterBuildingCGrant10pm_2021-10-05-22-44-37.0000000.jpg",
+                    "mime": "image/jpeg"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "pageInfo": {
+          "endCursor": "MTI",
+          "hasNextPage": true
+        }
+      }
+    }
+  }
+  
