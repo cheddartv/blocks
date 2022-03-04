@@ -11,12 +11,12 @@
   "peerDependencies": {
     "prop-types": "^15.0 || ^16.0",
     "react": "^17.0.2",
-    "react-native": "^0.66.1",
-    "react-native-ionicons": "^4.6.5",
-    "moment": "^2.29.1"
+    "react-native": "^0.66.1"
   },
   "dependencies": {
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react-native-ionicons": "^4.6.5",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "moment": "^2.29.1",
