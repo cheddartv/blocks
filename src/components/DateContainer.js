@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import PlayIcon from './PlayIcon'
 import theme from '../theme'
 
-const renderPlayIcon = isArticle => {
+const renderPlayIcon = (isArticle, cheddar, duration) => {
   const styles = StyleSheet.create({
     icon: {
       marginLeft: 12,
@@ -15,33 +15,53 @@ const renderPlayIcon = isArticle => {
 
   return !isArticle ? (
     <View style={styles.icon}>
-      <PlayIcon standard={true} />
+      <PlayIcon standard={true} cheddar={cheddar} duration={duration} />
     </View>
   ) : null
 }
 
-const DateContainer = ({ publicAt, isArticle, dontShowIcon = false }) => {
+const DateContainer = ({ 
+  publicAt, 
+  isArticle, 
+  dontShowIcon = false, 
+  cheddar = false,
+  duration,
+  media
+}) => {
+  const getFontStyle = () => {
+    if (isArticle || cheddar) return 'normal'
+
+    return 'italic'
+  }
+
   const styles = StyleSheet.create({
     dateContainer: {
-      flexDirection: 'row'
+      flexDirection: 'row',
+      justifyContent: cheddar ? 'space-between': 'flex-start',
+      marginBottom: cheddar && media ? 10 : 0
     },
     publicAt: {
-      fontFamily: 'Graphik-MediumItalic',
+      fontFamily: cheddar ? 'Graphik-Medium' : 'Graphik-MediumItalic',
       color: isArticle ? theme.colors.lightBlack : theme.colors.news12Grey,
       fontSize: isArticle ? 15 : 12,
       fontWeight: isArticle ? '500' : '400',
       lineHeight: 21,
-      fontStyle: isArticle ? 'normal' : 'italic',
+      fontStyle: getFontStyle(),
       paddingBottom: isArticle ? 15 : 0
     }
   })
 
+
+  const getDateFormat = () => {
+    return cheddar ? 'MMMM DD, YYYY' : 'MMMM DD, YYYY h:mm A'
+  }
+
   return (
     <View style={styles.dateContainer}>
       <Text style={styles.publicAt}>
-        {moment(publicAt).format('MMMM DD, YYYY h:mm A')}
+        {moment(publicAt).format(getDateFormat())}
       </Text>
-      {!dontShowIcon && renderPlayIcon(isArticle)}
+      {!dontShowIcon && renderPlayIcon(isArticle, cheddar, duration)}
     </View>
   )
 }
@@ -49,7 +69,10 @@ const DateContainer = ({ publicAt, isArticle, dontShowIcon = false }) => {
 export const DateContainerPropTypes = {
   publicAt: PropTypes.string,
   isArticle: PropTypes.bool,
-  dontShowIcon: PropTypes.bool
+  dontShowIcon: PropTypes.bool,
+  cheddar: PropTypes.bool,
+  duration: PropTypes.number,
+  media: PropTypes.bool
 }
 DateContainer.propTypes = DateContainerPropTypes
 

@@ -3,18 +3,21 @@ import { Text, View, Image, StyleSheet } from 'react-native'
 import { articlePropTypes } from '../../types'
 import thumbnail from '../../assets/news12.jpeg'
 import DateContainer from '../DateContainer'
+import PropTypes from 'prop-types'
 
-const MediaCard = ({ article }) => {
+const MediaCard = ({ article, cheddar = false }) => {
   const styles = StyleSheet.create({
     container: {
-      marginBottom: 10
+      marginBottom: 10,
+      paddingHorizontal: cheddar ? 20 : 0,
+      marginTop: cheddar ? 10 : 0
     },
     image: {
       height: 216
     },
     textCard: {
       paddingVertical: 10,
-      paddingHorizontal: 20
+      paddingHorizontal: cheddar ? 0 : 20
     },
     title: {
       fontFamily: 'Graphik-Medium',
@@ -35,18 +38,23 @@ const MediaCard = ({ article }) => {
         }}
       />
       <View style={styles.textCard}>
-        <Text style={styles.title}>{article?.title}</Text>
+        {!cheddar && <Text style={styles.title}>{article?.title}</Text>}
         <DateContainer
           publicAt={article?.public_at}
           dontShowIcon={!article?.videoFile}
+          cheddar={cheddar}
+          media={true}
+          duration={article?.videoFile?.duration}
         />
+        {cheddar && <Text style={styles.title}>{article?.title}</Text>}
       </View>
     </View>
   )
 }
 
 export const MediaCardPropTypes = {
-  ...articlePropTypes
+  ...articlePropTypes,
+  cheddar: PropTypes.bool
 }
 MediaCard.propTypes = MediaCardPropTypes
 

@@ -4,8 +4,9 @@ import { articlePropTypes } from '../../types'
 import thumbnail from '../../assets/news12.jpeg'
 import DateContainer from '../DateContainer'
 import theme from '../../theme'
+import PropTypes from 'prop-types'
 
-const HorizontalCard = ({ article }) => {
+const HorizontalCard = ({ article, cheddar = false }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'row',
@@ -43,6 +44,8 @@ const HorizontalCard = ({ article }) => {
         <DateContainer
           dontShowIcon={!article?.videoFile}
           publicAt={article?.public_at}
+          cheddar={cheddar}
+          duration={article?.videoFile?.duration}
         />
         <Text style={styles.titleText}>{article?.title}</Text>
       </View>
@@ -51,7 +54,8 @@ const HorizontalCard = ({ article }) => {
 }
 
 export const HorizontalCardPropTypes = {
-  ...articlePropTypes
+  ...articlePropTypes,
+  cheddar: PropTypes.bool
 }
 HorizontalCard.propTypes = HorizontalCardPropTypes
 
