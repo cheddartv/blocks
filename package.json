@@ -16,7 +16,8 @@
   "dependencies": {
     "prop-types": "^15.8.1",
     "react-native-ionicons": "^4.6.5",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2"
   },
   "devDependencies": {
     "moment": "^2.29.1",

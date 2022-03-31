@@ -13,7 +13,8 @@ export default {
       turbo: '#e3e500',
       zambezi: '#5a5a5a',
       sapphire: '#123075',
-      breakingNewsRed: '#D1193E'
+      breakingNewsRed: '#D1193E',
+      citrine: '#f0f200',
     }
   }
   
