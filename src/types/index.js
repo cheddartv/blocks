@@ -21,6 +21,15 @@ export const articlePropTypes = {
   thumbnails: PropTypes.shape(thumbnailPropTypes),
   squareThumbnails: PropTypes.shape(squareThumbnailPropTypes)
 }
+
+export const cheddarShowPropTypes = {
+  slug: slugPropType,
+  publishedAt: publicAtPropType,
+  thumbnail: { url: PropTypes.string },
+  videoFile: { duration: PropTypes.number },
+  title: titlePropType,
+}
+
 export const articlePropType = PropTypes.shape(articlePropTypes)
 
 export const authorPropTypes = { byline: bylinePropType }
