@@ -75,10 +75,10 @@ const VerticalCard = ({ show, cheddar = true }) => {
   )
 }
 
-export const HorizontalCardPropTypes = {
+export const VerticalCardPropTypes = {
   ...cheddarShowPropTypes,
   cheddar: PropTypes.bool
 }
-VerticalCard.propTypes = HorizontalCardPropTypes
+VerticalCard.propTypes = VerticalCardPropTypes
 
 export default VerticalCard
