@@ -15,14 +15,14 @@ const VerticalCard = ({ show, cheddar = true }) => {
         height: 2
       },
       shadowOpacity: 0.23,
-      shadowRadius: 2.62,
-      elevation: 4
+      shadowRadius: 2.62
     },
     container: {
       backgroundColor: 'white',
       margin: 15,
       width: 160,
-      height: 230
+      height: 230,
+      elevation: 4
     },
     image: {
       height: 100
@@ -75,10 +75,10 @@ const VerticalCard = ({ show, cheddar = true }) => {
   )
 }
 
-export const HorizontalCardPropTypes = {
+export const VerticalCardPropTypes = {
   ...cheddarShowPropTypes,
   cheddar: PropTypes.bool
 }
-VerticalCard.propTypes = HorizontalCardPropTypes
+VerticalCard.propTypes = VerticalCardPropTypes
 
 export default VerticalCard

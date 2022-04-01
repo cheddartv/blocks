@@ -25,8 +25,6 @@ export const articlePropTypes = {
 export const cheddarShowPropTypes = {
   slug: slugPropType,
   publishedAt: publicAtPropType,
-  thumbnail: { url: PropTypes.string },
-  videoFile: { duration: PropTypes.number },
   title: titlePropType,
 }
 
