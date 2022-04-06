@@ -5,7 +5,7 @@ import thumbnail from '../../assets/news12.jpeg'
 import DateContainer from '../DateContainer'
 import PropTypes from 'prop-types'
 
-const MediaCard = ({ article, cheddar = false }) => {
+const MediaCard = ({ article, cheddar = false, darkMode = false }) => {
   const styles = StyleSheet.create({
     container: {
       marginBottom: 10,
@@ -26,6 +26,9 @@ const MediaCard = ({ article, cheddar = false }) => {
       fontSize: 16,
       lineHeight: 22,
       marginBottom: 10
+    },
+    darkMode: {
+      color: 'white'
     }
   })
 
@@ -46,7 +49,7 @@ const MediaCard = ({ article, cheddar = false }) => {
           media={true}
           duration={article?.videoFile?.duration}
         />
-        {cheddar && <Text style={styles.title}>{article?.title}</Text>}
+        {cheddar && <Text style={[styles.title, darkMode && styles.darkMode]}>{article?.title}</Text>}
       </View>
     </View>
   )

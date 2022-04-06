@@ -6,7 +6,7 @@ import { cheddarShowPropTypes } from '../../types'
 import { DateContainer } from "../../index"
 import DurationPill from "../DurationPill"
 
-const VerticalCard = ({ show, cheddar = true }) => {
+const VerticalCard = ({ show, cheddar = true, darkMode = false }) => {
   const styles = StyleSheet.create({
     cardShadow: {
       shadowColor: '#000',
@@ -39,12 +39,27 @@ const VerticalCard = ({ show, cheddar = true }) => {
       fontWeight: '500',
       fontSize: 15,
       lineHeight: 22
+    },
+    darkModeText: {
+      color: 'white'
+    },
+    darkModeContainer: {
+      backgroundColor: 'black'
+    },
+    darkModeShadow: {
+      shadowColor: 'white',
+      shadowOffset: {
+        width: 0,
+        height: 2
+      },
+      shadowOpacity: 0.3,
+      shadowRadius: 2.62
     }
   })
 
   return (
-    <View style={styles.cardShadow}>
-      <View style={styles.container}>
+    <View style={darkMode ? styles.darkModeShadow : styles.cardShadow}>
+      <View style={[styles.container, darkMode && styles.darkModeContainer]}>
         <View>
           <Image
             style={styles.image}
@@ -66,7 +81,7 @@ const VerticalCard = ({ show, cheddar = true }) => {
             publicAt={show?.publishedAt}
             cheddar={cheddar}
           />
-          <Text numberOfLines={4} ellipsizeMode="tail" style={styles.titleText}>
+          <Text numberOfLines={4} ellipsizeMode="tail" style={[styles.titleText, darkMode && styles.darkModeText]}>
             {show?.title}
           </Text>
         </View>
