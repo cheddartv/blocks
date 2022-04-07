@@ -6,7 +6,7 @@ import DateContainer from '../DateContainer'
 import theme from '../../theme'
 import PropTypes from 'prop-types'
 
-const HorizontalCard = ({ article, cheddar = false }) => {
+const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'row',
@@ -27,6 +27,9 @@ const HorizontalCard = ({ article, cheddar = false }) => {
       fontWeight: '500',
       fontSize: 16,
       lineHeight: 22
+    },
+    darkMode: {
+      color: 'white'
     }
   })
 
@@ -47,7 +50,7 @@ const HorizontalCard = ({ article, cheddar = false }) => {
           cheddar={cheddar}
           duration={article?.videoFile?.duration}
         />
-        <Text style={styles.titleText}>{article?.title}</Text>
+        <Text style={[styles.titleText, darkMode && styles.darkMode]}>{article?.title}</Text>
       </View>
     </View>
   )
