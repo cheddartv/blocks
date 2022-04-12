@@ -26,12 +26,21 @@ const DateContainer = ({
   dontShowIcon = false, 
   cheddar = false,
   duration,
-  media
+  media,
+  darkMode = false
 }) => {
   const getFontStyle = () => {
     if (isArticle || cheddar) return 'normal'
 
     return 'italic'
+  }
+
+  const getFontColor = () => {
+    if (!isArticle) return theme.colors.news12Grey
+
+    if (darkMode) return 'white'
+
+    return theme.colors.lightBlack
   }
 
   const styles = StyleSheet.create({
@@ -42,7 +51,7 @@ const DateContainer = ({
     },
     publicAt: {
       fontFamily: cheddar ? 'Graphik-Medium' : 'Graphik-MediumItalic',
-      color: isArticle ? theme.colors.lightBlack : theme.colors.news12Grey,
+      color: getFontColor(),
       fontSize: isArticle ? 15 : 12,
       fontWeight: isArticle ? '500' : '400',
       lineHeight: 21,
