@@ -14,7 +14,7 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
       marginHorizontal: 20,
       borderTopWidth: 0.25,
       borderStyle: 'solid',
-      borderTopColor: theme.colors.lightBlack
+      borderTopColor: theme.colors[darkMode ? 'news12Metallic' : 'lightBlack']
     },
     title: {
       paddingLeft: 10,
