@@ -1,9 +1,9 @@
 import React from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 import { articlePropTypes } from '../../types'
-import thumbnail from '../../assets/news12.jpeg'
 import DateContainer from '../DateContainer'
 import PropTypes from 'prop-types'
+import {getThumbnailFallback} from "../../utils/getThumbnailFallback";
 
 const MediaCard = ({ article, cheddar = false, darkMode = false }) => {
   const styles = StyleSheet.create({
@@ -37,7 +37,7 @@ const MediaCard = ({ article, cheddar = false, darkMode = false }) => {
       <Image
         style={styles.image}
         source={{
-          uri: article?.thumbnails?.medium || thumbnail
+          uri: article?.thumbnails?.medium || getThumbnailFallback(cheddar)
         }}
       />
       <View style={styles.textCard}>
