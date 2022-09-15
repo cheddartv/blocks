@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 import { articlePropTypes } from '../../types'
-import thumbnail from '../../assets/news12.jpeg'
+import { getThumbnailFallback } from '../../utils/getThumbnailFallback'
 import DateContainer from '../DateContainer'
 import theme from '../../theme'
 import PropTypes from 'prop-types'
@@ -18,7 +18,8 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
     },
     title: {
       paddingLeft: 10,
-      flexShrink: 1
+      flexShrink: 1,
+      width: '100%'
     },
     titleText: {
       paddingTop: 6.8,
@@ -39,7 +40,7 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
         <Image
           style={{ height: 90, width: 90 }}
           source={{
-            uri: article?.thumbnails?.medium || thumbnail
+            uri: article?.thumbnails?.medium || getThumbnailFallback(cheddar)
           }}
         />
       </View>

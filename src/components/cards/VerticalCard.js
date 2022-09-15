@@ -3,10 +3,11 @@ import 'moment-duration-format'
 import PropTypes from 'prop-types'
 import { View, Text, Image, StyleSheet } from 'react-native'
 import { cheddarShowPropTypes } from '../../types'
+import { getThumbnailFallback } from '../../utils/getThumbnailFallback'
 import DateContainer from "../DateContainer"
 import DurationPill from "../DurationPill"
 
-const VerticalCard = ({ show, cheddar = true, darkMode = false }) => {
+const VerticalCard = ({show, cheddar = true, darkMode = false}) => {
   const styles = StyleSheet.create({
     cardShadow: {
       shadowColor: '#000',
@@ -65,7 +66,7 @@ const VerticalCard = ({ show, cheddar = true, darkMode = false }) => {
             style={styles.image}
             resizeMode="cover"
             source={{
-              uri: show.thumbnail
+              uri: show.thumbnail || getThumbnailFallback(cheddar)
             }}
           />
           {show.videoFile && (
