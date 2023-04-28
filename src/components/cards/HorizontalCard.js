@@ -23,7 +23,7 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
     },
     titleText: {
       paddingTop: 6.8,
-      fontFamily: 'Graphik-Medium',
+      fontFamily: cheddar ? 'Gotham' : 'Graphik-Medium',
       alignContent: 'center',
       fontWeight: '500',
       fontSize: 16,
