@@ -36,7 +36,7 @@ const VerticalCard = ({show, cheddar = true, darkMode = false}) => {
     titleText: {
       textAlign: 'center',
       marginHorizontal: 15,
-      fontFamily: 'Graphik-Medium',
+      fontFamily: cheddar ? 'Gotham' : 'Graphik-Medium',
       fontWeight: '500',
       fontSize: 15,
       lineHeight: 22

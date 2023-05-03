@@ -20,7 +20,7 @@ const MediaCard = ({ article, cheddar = false, darkMode = false }) => {
       paddingHorizontal: cheddar ? 0 : 20
     },
     title: {
-      fontFamily: 'Graphik-Medium',
+      fontFamily: cheddar ? 'Gotham' : 'Graphik-Medium',
       alignContent: 'center',
       fontWeight: '500',
       fontSize: 16,

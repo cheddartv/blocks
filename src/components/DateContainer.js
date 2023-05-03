@@ -50,7 +50,7 @@ const DateContainer = ({
       marginBottom: cheddar && media ? 10 : 0
     },
     publicAt: {
-      fontFamily: cheddar ? 'Graphik-Medium' : 'Graphik-MediumItalic',
+      fontFamily: cheddar ? 'Gotham' : 'Graphik-MediumItalic',
       color: getFontColor(),
       fontSize: isArticle ? 15 : 12,
       fontWeight: isArticle ? '500' : '400',
