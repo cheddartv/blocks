@@ -31,7 +31,7 @@ const DateContainer = ({
   darkMode = false,
 }) => {
   const getFontStyle = () => {
-    if (isArticle || cheddar) return "normal";
+    if (isArticle || cheddar || isStoryList) return "normal";
 
     return "italic";
   };
