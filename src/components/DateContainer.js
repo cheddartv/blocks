@@ -23,6 +23,7 @@ const renderPlayIcon = (isArticle, isStoryList, cheddar, duration) => {
 const DateContainer = ({
   publicAt,
   isArticle,
+  isStoryList,
   dontShowIcon = false,
   cheddar = false,
   duration,
