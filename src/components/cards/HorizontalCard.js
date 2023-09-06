@@ -40,7 +40,7 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
         <Image
           style={{ height: 90, width: 90 }}
           source={{
-            uri: article?.thumbnails?.medium || getThumbnailFallback(cheddar),
+            uri: article?.thumbnails?.medium || getThumbnailFallback(cheddar)
           }}
         />
       </View>
@@ -51,9 +51,7 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
           cheddar={cheddar}
           duration={article?.videoFile?.duration}
         />
-        <Text style={[styles.titleText, darkMode && styles.darkMode]}>
-          {article?.title}
-        </Text>
+        <Text style={[styles.titleText, darkMode && styles.darkMode]}>{article?.title}</Text>
       </View>
     </View>
   )
