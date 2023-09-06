@@ -64,8 +64,8 @@ const DateContainer = ({
     publicAt: {
       fontFamily: cheddar ? 'Gotham' : 'Graphik-MediumItalic',
       color: getFontColor(),
-      fontSize: isArticle || isStoryList ? 15 : 12,
-      fontWeight: isArticle ? '500' : isStoryList ? '800' : '400',
+      fontSize: isArticle || isStoryList || isMoreStories ? 15 : 12,
+      fontWeight: isArticle || isMoreStories ? '500' : isStoryList ? '800' : '400',
       lineHeight: 21,
       fontStyle: getFontStyle(),
       paddingBottom: isArticle ? 15 : 0,
