@@ -43,7 +43,7 @@ const HorizontalTimeAgoCard = ({ article, darkMode = false }) => {
           duration={article?.videoFile?.duration}
         />
         <Image
-          style={{ height: 90, width: 90 }}
+          style={{ height: 90, width: 130 }}
           source={{
             uri: article?.thumbnails?.medium || getThumbnailFallback(false),
           }}
