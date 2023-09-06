@@ -14,12 +14,12 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
       marginHorizontal: 20,
       borderTopWidth: 0.25,
       borderStyle: 'solid',
-      borderTopColor: theme.colors[darkMode ? 'news12Metallic' : 'lightBlack']
+      borderTopColor: theme.colors[darkMode ? 'news12Metallic' : 'lightBlack'],
     },
     title: {
       paddingLeft: 10,
       flexShrink: 1,
-      width: '100%'
+      width: '100%',
     },
     titleText: {
       paddingTop: 6.8,
@@ -27,11 +27,11 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
       alignContent: 'center',
       fontWeight: '500',
       fontSize: 16,
-      lineHeight: 22
+      lineHeight: 22,
     },
     darkMode: {
-      color: 'white'
-    }
+      color: 'white',
+    },
   })
 
   return (
