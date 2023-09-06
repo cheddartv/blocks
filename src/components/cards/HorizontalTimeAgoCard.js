@@ -16,8 +16,8 @@ const HorizontalTimeAgoCard = ({ article, darkMode = false }) => {
       borderTopColor: theme.colors[darkMode ? "news12Metallic" : "lightBlack"],
     },
     title: {
-      paddingTop:5,
-      paddingLeft: 5,
+      paddingTop: 16,
+      paddingLeft: 16,
       flexShrink: 1,
       width: "100%",
     },
