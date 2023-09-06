@@ -28,7 +28,7 @@ const DateContainer = ({
   cheddar = false,
   duration,
   media,
-  darkMode = false,
+  darkMode = false
 }) => {
   const getFontStyle = () => {
     if (isArticle || cheddar || isStoryList) return 'normal'
@@ -84,7 +84,7 @@ export const DateContainerPropTypes = {
   dontShowIcon: PropTypes.bool,
   cheddar: PropTypes.bool,
   duration: PropTypes.number,
-  media: PropTypes.bool,
+  media: PropTypes.bool
 }
 DateContainer.propTypes = DateContainerPropTypes
 
