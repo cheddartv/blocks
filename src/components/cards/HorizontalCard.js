@@ -61,7 +61,7 @@ const HorizontalCard = ({ article, cheddar = false, darkMode = false }) => {
 
 export const HorizontalCardPropTypes = {
   ...articlePropTypes,
-  cheddar: PropTypes.bool,
+  cheddar: PropTypes.bool
 }
 HorizontalCard.propTypes = HorizontalCardPropTypes
 
