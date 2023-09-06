@@ -14,10 +14,10 @@
     "react-native": "^0.66.1"
   },
   "dependencies": {
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
     "prop-types": "^15.8.1",
-    "react-native-ionicons": "^4.6.5",
-    "moment": "^2.29.1",
-    "moment-duration-format": "^2.3.2"
+    "react-native-ionicons": "^4.6.5"
   },
   "devDependencies": {
     "moment": "^2.29.1",

@@ -16,7 +16,7 @@ const HorizontalTimeAgoCard = ({ article, darkMode = false }) => {
       borderTopColor: theme.colors[darkMode ? "news12Metallic" : "lightBlack"],
     },
     title: {
-      paddingLeft: 10,
+      paddingLeft: 1,
       flexShrink: 1,
       width: "100%",
     },
@@ -37,7 +37,6 @@ const HorizontalTimeAgoCard = ({ article, darkMode = false }) => {
     <View style={styles.container}>
       <View>
         <DateContainer
-          isStoryList
           dontShowIcon={!article?.videoFile}
           publicAt={article?.public_at}
           duration={article?.videoFile?.duration}
