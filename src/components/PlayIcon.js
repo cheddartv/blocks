@@ -3,8 +3,8 @@ import { StyleSheet, View, Text } from 'react-native'
 import moment from 'moment'
 import Icon from './Icon'
 
-export default ({ standard, duration, cheddar }) => {
-  const showDuration = cheddar && duration
+export default ({ isMoreStories, standard, duration, cheddar }) => {
+  const showDuration = (cheddar || isMoreStories) && duration 
   const getWidth = () => {
     if (showDuration) return 45
 
