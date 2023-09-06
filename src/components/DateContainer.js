@@ -68,7 +68,7 @@ const DateContainer = ({
       fontWeight: isArticle || isMoreStories ? '500' : isStoryList ? '800' : '400',
       lineHeight: 21,
       fontStyle: getFontStyle(),
-      paddingBottom: isArticle ? 15 : 0,
+      paddingBottom: isArticle || isMoreStories ? 15 : 0,
     },
   })
 
