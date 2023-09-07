@@ -5,7 +5,7 @@ import { getThumbnailFallback } from "../../utils/getThumbnailFallback";
 import DateContainer from "../DateContainer";
 import theme from "../../theme";
 
-const HorizontalTimeAgoCard = ({ article, darkMode = false }) => {
+const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: "row",
@@ -35,7 +35,7 @@ const HorizontalTimeAgoCard = ({ article, darkMode = false }) => {
   });
 
   return (
-    <View style={styles.container}>
+    <View style={{...styles.container, ...style}}>
       <View>
         <DateContainer
           isMoreStories
