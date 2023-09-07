@@ -20,7 +20,7 @@ export default ({ isMoreStories, standard, duration, cheddar }) => {
       paddingVertical: standard ? 3 : 1,
       paddingLeft: standard ? 6 : 4.4,
       backgroundColor: '#F0F200',
-      borderRadius: 11.52
+      borderRadius: 11.52,
     },
     durationText: {
       fontSize: 8,

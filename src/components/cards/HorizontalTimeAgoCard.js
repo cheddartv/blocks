@@ -17,7 +17,7 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
       borderBottomColor: theme.colors.silver,
     },
     title: {
-      paddingTop: 16,
+      paddingTop: 25,
       paddingLeft: 16,
       flexShrink: 1,
       width: "100%",
@@ -33,22 +33,26 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
     darkMode: {
       color: "white",
     },
+    bounder: {
+      paddingTop: 30,
+      position: 'relative'
+    }
   });
 
   return (
     <View style={{...styles.container, ...style}}>
-      <View>
+      <View style={styles.bounder}>
+       <Image
+          style={{ height: 90, width: 130 }}
+          source={{
+            uri: article?.thumbnails?.medium || getThumbnailFallback(false),
+          }}
+        /> 
         <DateContainer
           isMoreStories
           dontShowIcon={!article?.videoFile}
           publicAt={article?.public_at}
           duration={article?.videoFile?.duration}
-        />
-        <Image
-          style={{ height: 90, width: 130 }}
-          source={{
-            uri: article?.thumbnails?.medium || getThumbnailFallback(false),
-          }}
         />
       </View>
       <View style={styles.title}>
