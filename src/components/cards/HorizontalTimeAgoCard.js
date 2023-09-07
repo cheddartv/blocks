@@ -9,11 +9,12 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: "row",
-      paddingVertical: 12,
+      paddingTop: 12,
+      paddingBottom: 20,
       marginHorizontal: 20,
-      borderTopWidth: 0.25,
+      borderBottomWidth: 0.25,
       borderStyle: "solid",
-      borderTopColor: theme.colors.news12Metallic,
+      borderBottomColor: theme.colors.silver,
     },
     title: {
       paddingTop: 16,
