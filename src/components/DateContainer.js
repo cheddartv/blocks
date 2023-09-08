@@ -65,16 +65,15 @@ const DateContainer = ({
       flexDirection: isMoreStories ? 'column' : 'row',
       justifyContent: cheddar ? 'space-between' : 'flex-start',
       marginBottom: cheddar && media ? 10 : 0,
-      
     },
     publicAt: {
       fontFamily: cheddar ? 'Gotham' : 'Graphik-MediumItalic',
       color: getFontColor(),
       fontSize: isArticle || isStoryList || isMoreStories ? 15 : 12,
       fontWeight: isArticle || isMoreStories ? '500' : isStoryList ? '800' : '400',
-      lineHeight: 21,
+      ...(isMoreStories ? { height: 25 } : { lineHeight: 21 }),
       fontStyle: getFontStyle(),
-      paddingBottom: isMoreStories? 12 : isArticle ? 15 : 0,
+      paddingBottom: isMoreStories ? 12 : isArticle ? 15 : 0,
     },
   })
 
