@@ -6,7 +6,7 @@ import PlayIcon from './PlayIcon'
 import timeAgo from '../utils/timeAgo'
 import theme from '../theme'
 
-const renderPlayIcon = ({
+export const renderPlayIcon = ({
   isMoreStories,
   isArticle,
   isStoryList,
@@ -15,18 +15,20 @@ const renderPlayIcon = ({
 }) => {
   const styles = StyleSheet.create({
     icon: {
-      marginTop: 0,
-      marginLeft: 12,
+      marginTop: isMoreStories ? 20 : 0,
+      marginLeft: isMoreStories ? 0 : 12,
       justifyContent: 'center',
-      ...(isMoreStories && { position: 'absolute',
-      left: -6,
-      top: -84 })
+       ...(isMoreStories && {
+        position:'absolute',
+        top: 20,
+        left: 8,
+      })
     },
   })
 
   return !isArticle || !isStoryList ? (
     <View style={styles.icon}>
-      <PlayIcon standard isMoreStories={isMoreStories} cheddar={cheddar} duration={duration} />
+      <PlayIcon standard={true} isMoreStories={isMoreStories} cheddar={cheddar} duration={duration} />
     </View>
   ) : null
 }
@@ -60,10 +62,10 @@ const DateContainer = ({
 
   const styles = StyleSheet.create({
     dateContainer: {
-      flexDirection: 'row',
+      flexDirection: isMoreStories ? 'column' : 'row',
       justifyContent: cheddar ? 'space-between' : 'flex-start',
       marginBottom: cheddar && media ? 10 : 0,
-      position: 'relative'
+      
     },
     publicAt: {
       fontFamily: cheddar ? 'Gotham' : 'Graphik-MediumItalic',
@@ -72,10 +74,7 @@ const DateContainer = ({
       fontWeight: isArticle || isMoreStories ? '500' : isStoryList ? '800' : '400',
       lineHeight: 21,
       fontStyle: getFontStyle(),
-      paddingBottom: isArticle || isMoreStories ? 15 : 0,
-      ...(isMoreStories && { position: 'absolute',
-      left: 0,
-      top: -120 })
+      paddingBottom: isMoreStories? 12 : isArticle ? 15 : 0,
     },
   })
 

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 import { articlePropTypes } from "../../types";
 import { getThumbnailFallback } from "../../utils/getThumbnailFallback";
-import DateContainer from "../DateContainer";
+import DateContainer, { renderPlayIcon } from "../DateContainer";
 import theme from "../../theme";
 
 const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
@@ -17,7 +17,7 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
       borderBottomColor: theme.colors.silver,
     },
     title: {
-      paddingTop: 25,
+      paddingTop: 16,
       paddingLeft: 16,
       flexShrink: 1,
       width: "100%",
@@ -33,27 +33,24 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
     darkMode: {
       color: "white",
     },
-    bounder: {
-      paddingTop: 30,
-      position: 'relative'
-    }
   });
 
   return (
     <View style={{...styles.container, ...style}}>
-      <View style={styles.bounder}>
-       <Image
+      <View>
+        <DateContainer
+          isMoreStories
+          dontShowIcon
+          publicAt={article?.public_at}
+          duration={article?.videoFile?.duration}
+        />
+        <Image
           style={{ height: 90, width: 130 }}
           source={{
             uri: article?.thumbnails?.medium || getThumbnailFallback(false),
           }}
-        /> 
-        <DateContainer
-          isMoreStories
-          dontShowIcon={!article?.videoFile}
-          publicAt={article?.public_at}
-          duration={article?.videoFile?.duration}
         />
+        {renderPlayIcon({ isMoreStories: true, duration: article?.videoFile?.duration })}
       </View>
       <View style={styles.title}>
         <Text style={[styles.titleText, darkMode && styles.darkMode]}>
