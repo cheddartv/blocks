@@ -20,7 +20,7 @@ export const renderPlayIcon = ({
       justifyContent: 'center',
        ...(isMoreStories && {
         position:'absolute',
-        top: 20,
+        top: 15,
         left: 8,
       })
     },
