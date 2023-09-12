@@ -36,7 +36,7 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
   });
 
   return (
-    <View style={{...styles.container, ...style}}>
+    <View style={{ ...styles.container, ...style }}>
       <View>
         <DateContainer
           isMoreStories
@@ -50,7 +50,12 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
             uri: article?.thumbnails?.medium || getThumbnailFallback(false),
           }}
         />
-        {renderPlayIcon({ isMoreStories: true, duration: article?.videoFile?.duration })}
+        {article?.videoFile?.duration
+          ? renderPlayIcon({
+              isMoreStories: true,
+              duration: article?.videoFile?.duration,
+            })
+          : null}
       </View>
       <View style={styles.title}>
         <Text style={[styles.titleText, darkMode && styles.darkMode]}>
