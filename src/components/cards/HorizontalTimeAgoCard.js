@@ -17,7 +17,7 @@ const HorizontalTimeAgoCard = ({ article, style, darkMode = false }) => {
       borderBottomColor: theme.colors.silver,
     },
     title: {
-      paddingTop: 25,
+      paddingTop: 15,
       paddingLeft: 16,
       flexShrink: 1,
       width: "100%",
