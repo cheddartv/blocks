@@ -16,12 +16,12 @@ export const renderPlayIcon = ({
 }) => {
   const styles = StyleSheet.create({
     icon: {
-      marginTop: isMoreStories ? isAndroid? 30 : 20 : 0,
+      marginTop: isMoreStories ? 20 : 0,
       marginLeft: isMoreStories ? 0 : 12,
       justifyContent: 'center',
        ...(isMoreStories && {
         position:'absolute',
-        top: 15,
+        top: isAndroid ? 25 : 15,
         left: 8,
       })
     },
