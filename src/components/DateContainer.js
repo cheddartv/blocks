@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, Platform } from 'react-native'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 import PlayIcon from './PlayIcon'
@@ -60,6 +60,8 @@ const DateContainer = ({
     return theme.colors.lightBlack
   }
 
+  const isAndroid = Platform.OS === 'android'
+
   const styles = StyleSheet.create({
     dateContainer: {
       flexDirection: isMoreStories ? 'column' : 'row',
@@ -71,7 +73,7 @@ const DateContainer = ({
       color: getFontColor(),
       fontSize: isArticle || isStoryList || isMoreStories ? 15 : 12,
       fontWeight: isArticle || isMoreStories ? '500' : isStoryList ? '800' : '400',
-      ...(isMoreStories ? { height: 25, lineHeight: 25 } : { lineHeight: 21 }),
+      ...(isMoreStories ? { height: isAndroid ? 35 : 25, lineHeight: 25 } : { lineHeight: 21 }),
       fontStyle: getFontStyle(),
       paddingBottom: isMoreStories ? 12 : isArticle ? 15 : 0,
     },
