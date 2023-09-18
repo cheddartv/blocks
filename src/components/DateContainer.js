@@ -10,7 +10,6 @@ export const renderPlayIcon = ({
   isMoreStories,
   isArticle,
   isStoryList,
-  isAndroid,
   cheddar,
   duration
 }) => {
@@ -21,7 +20,7 @@ export const renderPlayIcon = ({
       justifyContent: 'center',
        ...(isMoreStories && {
         position:'absolute',
-        top: isAndroid ? 25 : 15,
+        top: 15,
         left: 8,
       })
     },
@@ -74,9 +73,9 @@ const DateContainer = ({
       color: getFontColor(),
       fontSize: isArticle || isStoryList || isMoreStories ? 15 : 12,
       fontWeight: isArticle || isMoreStories ? '500' : isStoryList ? '800' : '400',
-      ...(isMoreStories ? { height: isAndroid ? 35 : 25, lineHeight: 25 } : { lineHeight: 21 }),
+      ...(isMoreStories ? { height: isAndroid ? 35 : 25, lineHeight: 21 } : { lineHeight: 21 }),
       fontStyle: getFontStyle(),
-      paddingBottom: isMoreStories ? 12 : isArticle ? 15 : 0,
+      paddingBottom: isMoreStories ? isAndroid ? 22 : 12 : isArticle ? 15 : 0,
     },
   })
 
@@ -91,7 +90,7 @@ const DateContainer = ({
           ? timeAgo(publicAt)
           : moment(publicAt).format(getDateFormat())}
       </Text>
-      {!dontShowIcon && renderPlayIcon({ isArticle, isMoreStories, isAndroid, cheddar, duration })}
+      {!dontShowIcon && renderPlayIcon({ isArticle, isMoreStories, cheddar, duration })}
     </View>
   )
 }
