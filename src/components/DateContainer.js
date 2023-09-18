@@ -10,12 +10,13 @@ export const renderPlayIcon = ({
   isMoreStories,
   isArticle,
   isStoryList,
+  isAndroid,
   cheddar,
   duration
 }) => {
   const styles = StyleSheet.create({
     icon: {
-      marginTop: isMoreStories ? 20 : 0,
+      marginTop: isMoreStories ? isAndroid? 30 : 20 : 0,
       marginLeft: isMoreStories ? 0 : 12,
       justifyContent: 'center',
        ...(isMoreStories && {
@@ -90,7 +91,7 @@ const DateContainer = ({
           ? timeAgo(publicAt)
           : moment(publicAt).format(getDateFormat())}
       </Text>
-      {!dontShowIcon && renderPlayIcon({ isArticle, isMoreStories, cheddar, duration })}
+      {!dontShowIcon && renderPlayIcon({ isArticle, isMoreStories, isAndroid, cheddar, duration })}
     </View>
   )
 }
