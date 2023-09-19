@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, StyleSheet, Platform } from 'react-native'
+import { Text, View, StyleSheet } from 'react-native'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 import PlayIcon from './PlayIcon'
@@ -20,7 +20,7 @@ export const renderPlayIcon = ({
       justifyContent: 'center',
        ...(isMoreStories && {
         position:'absolute',
-        top: 22,
+        top: 17,
         left: 8,
       })
     },
@@ -59,8 +59,6 @@ const DateContainer = ({
 
     return theme.colors.lightBlack
   }
-
-  const isAndroid = Platform.OS === 'android'
 
   const styles = StyleSheet.create({
     dateContainer: {
