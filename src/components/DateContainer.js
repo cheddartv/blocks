@@ -20,7 +20,7 @@ export const renderPlayIcon = ({
       justifyContent: 'center',
        ...(isMoreStories && {
         position:'absolute',
-        top: 15,
+        top: 22,
         left: 8,
       })
     },
@@ -69,11 +69,11 @@ const DateContainer = ({
       marginBottom: cheddar && media ? 10 : 0,
     },
     publicAt: {
-      fontFamily: cheddar ? 'Gotham' : 'Graphik-MediumItalic',
+      fontFamily: cheddar || isMoreStories ? 'Gotham' : 'Graphik-MediumItalic',
       color: getFontColor(),
       fontSize: isArticle || isStoryList || isMoreStories ? 15 : 12,
       fontWeight: isArticle || isMoreStories ? '500' : isStoryList ? '800' : '400',
-      ...(isMoreStories ? { height: isAndroid ? 35 : 25, lineHeight: 21 } : { lineHeight: 21 }),
+      ...(isMoreStories ? { height: 27, lineHeight: 15 } : { lineHeight: 21 }),
       fontStyle: getFontStyle(),
       paddingBottom: isMoreStories ? 12 : isArticle ? 15 : 0,
     },
