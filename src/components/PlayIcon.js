@@ -25,7 +25,8 @@ export default ({ isMoreStories, standard, duration, cheddar }) => {
     durationText: {
       fontSize: isMoreStories ? 13 : 8,
       fontWeight: isMoreStories ? '500' : '400',
-      marginLeft: 2
+      marginLeft: 2,
+      lineHeight: 15
     }
   })
 
