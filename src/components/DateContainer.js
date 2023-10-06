@@ -60,8 +60,6 @@ const DateContainer = ({
     return theme.colors.lightBlack
   }
 
-  const isAndroid = Platform.OS === 'android'
-
   const styles = StyleSheet.create({
     dateContainer: {
       flexDirection: isMoreStories ? 'column' : 'row',
@@ -69,10 +67,10 @@ const DateContainer = ({
       marginBottom: cheddar && media ? 10 : 0,
     },
     publicAt: {
-      fontFamily: cheddar || isMoreStories ? 'Gotham' : 'Graphik-MediumItalic',
+      fontFamily: cheddar ? 'Gotham' : 'Graphik-MediumItalic',
       color: getFontColor(),
       fontSize: isArticle || isStoryList || isMoreStories ? 15 : 12,
-      fontWeight: isArticle ? '500' : isStoryList || isMoreStories? '800' : '400',
+      fontWeight: isArticle || isMoreStories? '500' : isStoryList ? '800' : '400',
       ...(isMoreStories ? { height: 27, lineHeight: 15 } : { lineHeight: 21 }),
       fontStyle: getFontStyle(),
       paddingBottom: isMoreStories ? 12 : isArticle ? 15 : 0,
